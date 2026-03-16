@@ -80,7 +80,7 @@ export default function Home() {
           <div className="mt-3 flex items-center justify-between border-t border-zinc-900 pt-3 text-[10px] text-zinc-500">
             <span>Click analytics enabled</span>
             <Link
-              href="#"
+              href="/dashboard"
               className="rounded-full border border-zinc-800 px-2 py-0.5 text-[10px] text-zinc-300 hover:border-emerald-400/70"
             >
               View dashboard
