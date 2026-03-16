@@ -3,9 +3,9 @@ import { SignInButton } from "./signin-button";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-10 lg:flex-row">
-      <section className="flex-1 space-y-6">
-        <h1 className="text-balance text-4xl font-semibold tracking-tight text-zinc-50 sm:text-5xl">
+    <div className="flex flex-col gap-8 md:gap-10 lg:flex-row lg:items-start">
+      <section className="flex-1 space-y-5 md:space-y-6">
+        <h1 className="text-balance text-3xl font-semibold tracking-tight text-zinc-50 sm:text-4xl md:text-5xl">
           One secure link profile,
           <span className="bg-gradient-to-r from-emerald-400 to-sky-500 bg-clip-text text-transparent">
             {" "}
@@ -44,13 +44,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex-1 rounded-2xl border border-zinc-800 bg-zinc-950/60 p-5 shadow-[0_0_80px_rgba(16,185,129,0.12)]">
+      <section className="mt-2 flex-1 rounded-2xl border border-zinc-800 bg-zinc-950/60 p-4 shadow-[0_0_80px_rgba(16,185,129,0.12)] sm:p-5">
         <div className="mb-4 flex items-center justify-between">
           <span className="text-xs font-medium uppercase tracking-[0.18em] text-zinc-500">
             Preview
           </span>
           <span className="rounded-full bg-zinc-900 px-2 py-0.5 text-[10px] text-zinc-400">
-            /your-handle
+            IdentityLink
           </span>
         </div>
         <div className="space-y-3">
