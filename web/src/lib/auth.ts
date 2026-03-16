@@ -36,13 +36,14 @@ export const {
       if (!user || !account || account.provider !== "github") return false;
 
       const githubId = account.providerAccountId;
+      const profileWithLogin = profile as { login?: string } | null;
       const username =
-        (user as any).username ??
-        (profile && "login" in profile ? (profile.login as string) : undefined);
+        (user as { username?: string }).username ??
+        profileWithLogin?.login;
 
       if (!githubId || !username) return false;
 
-      const dbUser = await prisma.user.upsert({
+      await prisma.user.upsert({
         where: { githubId },
         create: {
           githubId,
